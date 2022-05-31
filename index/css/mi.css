@@ -1,0 +1,1351 @@
+/* 导航栏 */
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  line-height: 40px;
+}
+
+/* 导航栏左侧 */
+.header-left {
+  float: left;
+}
+
+/* 导航栏右侧 */
+.header-right {
+  float: right;
+}
+
+.header-right li:nth-child(3) {
+  padding: 0 5px;
+}
+
+/* 购物车 */
+.shopping {
+  float: right;
+  margin-left: 15px;
+  position: relative;
+}
+
+.shopping a {
+  width: 120px;
+  height: 40px;
+  background-color: #424242;
+  display: block;
+  text-align: center;
+}
+
+.shopping a:hover {
+  background-color: white;
+  color: #ff6700;
+}
+
+.shopping a i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+/* 鼠标悬停购物车显示内容 */
+.shopping:hover>.shopping-list {
+  height: 100px;
+  /* 过渡高度 */
+}
+
+/* 购物车内容 */
+.shopping-list {
+  width: 316px;
+  height: 0px;
+  line-height: 100px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+  position: absolute;
+  top: 40px;
+  right: 0;
+  text-align: center;
+  transition: all .5s;
+  /* 过渡，设置高度为0，overflow隐藏元素 */
+  z-index: 999;
+}
+
+/* 购物车内容字体 */
+.shopping-list span {
+  font-size: 12px;
+}
+
+/* 导航栏左右侧li浮动 */
+.header li {
+  position: relative;
+  float: left;
+  height: 40px;
+}
+
+/* 导航栏中的a标签 */
+.header a {
+  font-size: 12px;
+  color: #B0B0B0;
+}
+
+.header li a:hover {
+  color: white;
+}
+
+/* 导航栏中的间隔线 */
+.header span {
+  margin: 0 5.6px;
+  color: #424242;
+}
+
+/* 导航栏下载app中的下拉列表 */
+.download-picture {
+  overflow: hidden;
+  position: absolute;
+  right: -23px;
+  width: 124px;
+  height: 0px;
+  box-shadow: 0 1px 5px #aaa;
+  transition: height .5s;
+  /* 给下载app添加过渡 */
+  z-index: 9999;
+  background-color: whitesmoke;
+  border-radius: 5%;
+}
+
+.download-picture img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  padding-top: 18px;
+  margin: 0 auto;
+  /* z-index: 999; */
+}
+
+/* 下载app下拉列表中的文字 */
+.download-picture div {
+  text-align: center;
+  color: #424242;
+}
+
+/* 下载app所在的li */
+.download {
+  position: relative;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.download:hover>.download-picture {
+  height: 148px;
+}
+
+.download:hover>.triangle {
+  display: block;
+  opacity: 1;
+}
+
+/* 绘制三角形▲ */
+.triangle {
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  border-bottom: 8px white solid;
+  border-left: 8px transparent solid;
+  border-right: 8px transparent solid;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+/* 顶部品牌列表 */
+.nav {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+/* 品牌列表左部logo */
+.nav-left img {
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin-top: 22px;
+}
+
+/* 图片触摸效果 */
+.nav-left img:hover {
+  transform: translateX(2%);
+}
+
+/* 品牌列表中间 */
+.nav-center>ul {
+  width: 850px;
+  height: 100px;
+  float: left;
+  padding-left: 170px;
+  box-sizing: border-box;
+}
+
+.nav-center ul li {
+  line-height: 100px;
+  padding: 0 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.nav-center>ul>li>a {
+  color: #333333;
+  font-size: 16px;
+}
+
+.nav-center>ul>li:hover>a {
+  color: #ff6700;
+}
+
+/* menu下拉列表 */
+.navMenuList {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 150;
+  transition: height .5s;
+}
+
+.navMenuList .nav-center-list {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+/* .nav-center .open:hover~.navMenuList {
+  height: 229px;
+  box-shadow: 0 3px 4px rgb(0, 0, 0, .18);
+  border-top: 1px solid #e0e0e0;
+}
+
+.navMenuList:hover {
+  height: 229px;
+  box-shadow: 0 3px 4px rgb(0, 0, 0, .18);
+  border-top: 1px solid #e0e0e0;
+} */
+
+/* 列表定位 */
+.nav-center-list li {
+  float: left;
+  width: 180px;
+  padding-top: 35px;
+}
+
+/* 列表中li的右边框间隔线 */
+.nav-img-box {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  margin-top: 35px;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+
+/* 列表下li中的图片大小 */
+.nav-img-box img {
+  width: 160px;
+  height: 110px;
+  line-height: 0px;
+}
+
+/* 列表下li中的p元素重新设置行高 */
+.nav-img-box p {
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+}
+
+.nav-img-box>div {
+  position: absolute;
+  top: 125px;
+  left: 25%;
+}
+
+/* 单独设置电视li的定位 */
+.televisionBar .nav-img-box>div {
+  left: 5%;
+}
+
+/* 单独设置笔记本li的定位 */
+.notebook .nav-img-box>div {
+  left: 20px;
+}
+
+/* 单独设置家电li的定位 */
+.homeMachine .nav-img-box>div {
+  left: 15px;
+}
+
+/* 单独设置路由器li的定位 */
+.router .nav-img-box>div {
+  left: 40px;
+}
+
+/* 列表中li触摸变色 */
+.nav-img-box p:last-of-type {
+  color: #ff6700;
+}
+
+/* 品牌列表右侧 */
+.nav-right {
+  position: relative;
+  float: right;
+  margin-top: 25px;
+  width: 296px;
+  height: 50px;
+}
+
+/* 输入框 */
+.nav-right>input {
+  float: left;
+  width: 222px;
+  height: 48px;
+  padding: 0 10px;
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  outline: none;
+  transition: all .3s;
+}
+
+/* 按钮 */
+.nav-right>button {
+  float: left;
+  width: 52px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: all .3s;
+  font-size: 18px;
+  color: #616161;
+}
+
+/* button触摸效果 */
+/* .nav-right>button:hover {
+  background-color: #ff6700;
+  border-color: #ff6700;
+  color: white;
+} */
+
+/* input触摸效果 */
+/* .nav-right input:hover,
+.nav-right input:hover+button {
+  border-color: #B0B0B0;
+} */
+
+/* input获得焦点 */
+/* .nav-right input:focus,
+.nav-right input:focus+button {
+  border-color: #ff6700;
+} */
+
+/* input的下拉框 */
+.search-list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 242px;
+  height: 241px;
+  border: 1px solid #ff6700;
+  border-top: none;
+  overflow: hidden;
+  background-color: white;
+  z-index: 99;
+}
+
+/* .nav-right input:focus~.search-list {
+  display: block;
+} */
+
+/* 设置下拉框中的历史内容 */
+.search-list ul li {
+  width: 228px;
+  height: 25px;
+  padding-left: 15px;
+  padding-top: 5px;
+  color: #424242;
+  border-style: none;
+  font-size: 12px;
+}
+
+/* 历史内容触摸效果 */
+.search-list ul li:hover {
+  background-color: #f3f3f3;
+}
+
+/* 中间容器 */
+.banner,
+.banner-box {
+  width: 100%;
+  height: 460px;
+}
+
+/* 轮播图外层 */
+.banner-box {
+  position: relative;
+}
+
+/* 轮播图 */
+.slideshow {
+  width: 100%;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 轮播图ul容器 */
+.slideshow-img-wrapper {
+  position: absolute;
+  height: 460px;
+}
+
+.slideItem {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s;
+}
+
+/* 轮播图选择 */
+.slideActive {
+  z-index: 9;
+  opacity: 1;
+}
+
+/* 轮播图图片 */
+.slideshow-img-wrapper>li>a>img {
+  width: 1226px;
+  height: 460px;
+  /* opacity: 1; */
+  transition: all .5s;
+}
+
+/* 轮播图左侧菜单 */
+.slide {
+  position: absolute;
+  top: 0;
+  height: 460px;
+  width: 234px;
+  background-color: rgba(41, 40, 40, 0.6);
+  padding: 20px 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+/* 轮播图左侧菜单li */
+.slide>ul>li {
+  height: 42px;
+  line-height: 42px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.slide>ul>li:hover {
+  background-color: #ff6700;
+}
+
+.slide>ul>li>a {
+  display: block;
+  color: white;
+  font-size: 14px;
+  height: 46px;
+  width: 202px;
+}
+
+/* li中的箭头→ */
+.slide>ul>li>a>i {
+  float: right;
+  line-height: 42px;
+  margin-right: 30px;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+/* 左侧菜单的滑动列表 */
+.slide-list {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 234px;
+  width: 992px;
+  height: 460px;
+  background-color: white;
+  border-left: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+  z-index: 100;
+}
+
+/* 菜单栏触摸效果 */
+.slide>ul>li:hover .slide-list {
+  display: block;
+}
+
+/* 菜单栏下的ul大小 */
+.slide-list>ul {
+  width: 248px;
+  height: 458px;
+  float: left;
+}
+
+.slide-list>ul>li {
+  width: 225px;
+  height: 40px;
+  padding: 18px 0px 18px 20px;
+}
+
+.slide-list>ul>li>a {
+  display: block;
+  height: 100%;
+}
+
+/* 滑动列表图片 */
+.slide-list>ul>li img {
+  float: left;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.slide-list>ul>li>a>span {
+  float: left;
+  color: #333;
+}
+
+/* 滑动三栏样式 */
+.slide-list-three {
+  width: 744px;
+}
+
+/* 滑动两栏列表 */
+.slide-list-two {
+  width: 496px;
+}
+
+/* 轮播图箭头 */
+.slideshow div {
+  position: absolute;
+  width: 41px;
+  height: 69px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 3%;
+  z-index: 99;
+}
+
+/* 左侧箭头 */
+.sildeshow-pre {
+  left: 234px;
+  background: url(../images/icon-slides.png) no-repeat -84px 50%;
+}
+
+.sildeshow-pre:hover {
+  background-position: 0px;
+}
+
+/* 右侧箭头 */
+.sildeshow-next {
+  right: 0;
+  background: url(../images/icon-slides.png) no-repeat -125px 50%;
+}
+
+.sildeshow-next:hover {
+  background-position: -43px;
+}
+
+/* 轮播图切换图标 */
+.slideshow-nav {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 90px;
+  height: 21px;
+  z-index: 99;
+}
+
+/* 设置导航点样式 */
+.navItem {
+  width: 6px;
+  height: 6px;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .4);
+  float: left;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+/* 导航点触摸样式 */
+/* .navItem:hover {
+  border: 2px solid rgba(0, 0, 0, .4);
+  background-color: hsla(0, 0%, 100%, .4);
+} */
+.navHover {
+  border: 2px solid rgba(0, 0, 0, .4);
+  background-color: hsla(0, 0%, 100%, .4);
+}
+
+/* 广告列表 */
+.advertisement {
+  width: 100%;
+  height: 170px;
+  background-color: white;
+  margin: 14px 0 26px;
+}
+
+/* 广告第一块 */
+.advertisement-aside {
+  float: left;
+  width: 228px;
+  height: 164px;
+  padding: 3px;
+  /* background-color: #5f5750; */
+}
+
+/* 广告后三块 */
+.advertisement-img {
+  float: left;
+  width: 316px;
+  height: 170px;
+  margin-left: 14.66px;
+  transition: all .2s linear;
+}
+
+.advertisement-img:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+}
+
+.advertisement-img img {
+  width: 100%;
+}
+
+/* 广告第一块中的内容 */
+.advertisement-aside>ul>li {
+  position: relative;
+  float: left;
+  width: 70px;
+  height: 82px;
+  padding: 0 3px;
+}
+
+.advertisement-aside>ul>li>a:hover {
+  opacity: 1;
+}
+
+.advertisement-aside>ul>li>a {
+  display: block;
+  padding-top: 18px;
+  opacity: .7;
+  color: white;
+  text-align: center;
+  transition: all .3s;
+}
+
+.advertisement-aside>ul>li>a>i {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 21px;
+}
+
+.advertisement-aside>ul>li>a>span {
+  font-size: 12px;
+}
+
+/* 底部边框线 */
+.row::before {
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  content: '';
+  width: 64px;
+  height: 1px;
+  background-color: #847d77;
+}
+
+/* 右边框线 */
+.col::after {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  content: '';
+  height: 64px;
+  width: 1px;
+  background-color: #847d77;
+}
+
+/* 底部商品块 */
+.page-main {
+  padding: 4px 0px 12px 0px;
+  background-color: #f5f5f5;
+}
+
+/* 手机展示单独横幅 */
+.home-banner-box {
+  height: 120px;
+  margin: 22px 0;
+}
+
+.home-banner-box img {
+  width: 100%;
+}
+
+/* 商品块列表 */
+.home-brick-box {
+  margin-bottom: 15px;
+}
+
+/* 头部 */
+.brick-hd {
+  height: 58px;
+  line-height: 58px;
+}
+
+/* 头部标题 */
+.brick-hd .title {
+  float: left;
+  font-size: 22px;
+  font-weight: 200;
+  color: #333;
+}
+
+/* 头部更多 */
+.brick-hd .more {
+  float: right;
+}
+
+.brick-hd>.more>a {
+  color: #333;
+  font-size: 16px;
+  transition: all .3s;
+}
+
+.brick-hd>.more>a>i {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  margin-left: 8px;
+  border-radius: 9px;
+  background-color: #aaa;
+  color: white;
+  line-height: 12px;
+  text-align: center;
+  transition: all .3s;
+}
+
+/* 头部更多的触摸动画 */
+.brick-hd>.more>a:hover {
+  color: #ff6700;
+}
+
+.brick-hd>.more>a:hover i {
+  background-color: #ff6700;
+}
+
+/* .brick-bd内容 */
+.brick-bd {
+  position: relative;
+}
+
+/* 添加动画效果 */
+.brick-bd ul>li {
+  transition: all .3s;
+
+}
+
+/* 内容左边条幅 */
+.brick-bd-left {
+  float: left;
+  width: 234px;
+  height: 614px;
+  padding-bottom: 14px;
+}
+
+.brick-bd-left>ul>li {
+  background-color: white;
+  height: 614px;
+}
+
+.brick-bd-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.kanbugou {
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-left: 500px;
+  width: 200px;
+  height: 30px;
+  background-color: rgba(85, 84, 89, 0.4);
+  border-radius: 15px;
+
+}
+
+/* 内容右边 */
+.brick-right {
+  float: left;
+}
+
+.brick-bd-right {
+  float: left;
+  width: 100%;
+  /* background-color: #f5f5f5; */
+}
+
+.brick-bd-right>ul>li {
+  height: 300px;
+  width: 23%;
+  margin: 0 0 14px 14px;
+  background-color: white;
+  float: left;
+}
+
+.brick-bd ul>li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+  transform: perspective(650px) translate3d(0, -2px, 10px);
+}
+
+.brick-bd-right>ul>li>a {
+  display: block;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+/* li中的图片 */
+.brick-bd-right>ul>li img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
+.brick-bd-right>ul>li>a h3,
+.brick-bd-right>ul>li>a p {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 小标题 */
+.brick-bd-right>ul>li>a h3 {
+  color: #333;
+  margin: 15px 10px 3px;
+}
+
+/* 描述 */
+.brick-bd-right>ul>li>a .desc {
+  font-size: 12px;
+  height: 18px;
+  margin: 0 8px 10px;
+  color: #b0b0b0;
+}
+
+/* 价格 */
+.brick-bd-right>ul>li>a .price {
+  margin: 0 10px 14px;
+  text-align: center;
+}
+
+.price>span {
+  color: #ff6700;
+}
+
+.price>del {
+  color: #B0B0B0;
+  margin-left: 8px;
+}
+
+/* 智能穿戴模块 */
+.smartDress>.brick-hd>.more>div {
+  float: left;
+  line-height: 58px;
+  margin-left: 30px;
+}
+
+/* 重置更多模块 */
+.smartDress .more>div>a {
+  color: #333;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+
+/* 要添加的JS属性 */
+.hover {
+  color: #ff6700 !important;
+  border-bottom: 2px solid #ff6700 !important;
+  transition: all .3s;
+}
+
+.mineSty {
+  color: #ff6700 !important;
+  border-bottom: 2px solid #ff6700 !important;
+}
+
+.otherSty {
+  color: #333 !important;
+  border-bottom: none !important;
+}
+
+/* 重新定位右侧的内容 */
+.smartDress .brick-right {
+  position: absolute;
+  left: 234px;
+}
+
+.conceal {
+  display: none;
+}
+
+/* 重置最后一块内容第一部分 */
+#lastCon {
+  position: relative;
+  width: 234px;
+  height: 143px;
+  cursor: pointer;
+}
+
+/* 图片容器 */
+.prohalf .pic {
+  position: absolute;
+  top: 31.5px;
+  right: 25px;
+}
+
+.prohalf .pic img {
+  width: 80px;
+  height: 80px;
+}
+
+/* 产品介绍 */
+.prohalf .title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.prohalf .price {
+  color: #ff6700;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.lookMore .more {
+  margin: 50px 0px 0px 30px;
+}
+
+/* 最后一块内容第二部分 */
+.lookMore .more span {
+  display: block;
+  font-size: 18px;
+}
+
+/* 内容介绍 */
+.lookMore .more small {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+}
+
+/* 图标 */
+.lookMore .icon {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  color: #ff6700;
+}
+
+.lookMore .icon i {
+  font-size: 55px;
+}
+
+/* 平板模块 */
+#def {
+  border-bottom: 2px solid #ff6700;
+  color: #ff6700;
+}
+
+/* 家电模块 */
+/* 重置左边框列表 */
+#first-item {
+  width: 234px;
+  height: 300px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+#first-item>li {
+  width: 234px;
+  height: 300px;
+}
+
+#first-item>li>img {
+  width: 234px;
+  height: 300px;
+}
+
+/* 视频模块 */
+.video {
+  background-color: red;
+}
+
+.video>li {
+  width: 296px;
+  height: 285px;
+  float: left;
+  margin: 0px 0px 14px 14px;
+  background-color: white;
+}
+
+.video>.video-first {
+  margin: 0 0 14px 0;
+}
+
+/* 视频图片块 */
+.video-img {
+  position: relative;
+}
+
+.video>li>a>div {
+  width: 296px;
+  height: 180px;
+}
+
+.video>li>a>div>img {
+  height: 100%;
+  width: 100%;
+}
+
+.video>li>a>div>span {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  width: 32px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, .6);
+  border: 2px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  transition: all .2s;
+}
+
+.video-img:hover span {
+  background-color: #ff6700;
+  border-color: #ff6700;
+}
+
+/* 视频标题信息 */
+.video>li>a>p {
+  margin: 0 14px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.video .title {
+  margin-top: 25px;
+}
+
+.video .desc {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+/* 售后栏 */
+.service {
+  border-bottom: 1px solid #e0e0e0;
+  height: 80px;
+}
+
+.service>.list-service>li {
+  float: left;
+  width: 19.9%;
+  height: 30px;
+  margin-top: 25px;
+  font-size: 16px;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+}
+
+.service>.list-service>li:last-child {
+  border-style: none;
+}
+
+.service>.list-service>li>a {
+  color: #616161;
+  transition: color .2s;
+}
+
+.service>.list-service>li>a:hover {
+  color: #ff6700;
+}
+
+.service>.list-service>li>a>i {
+  margin-right: 10px;
+}
+
+/* 链接左边栏 */
+.links {
+  padding: 40px 0;
+}
+
+.links>.links-left>dl {
+  float: left;
+  width: 160px;
+}
+
+.links-left>dl>dt {
+  color: #424242;
+  margin-bottom: 26px;
+  font-size: 14px;
+}
+
+.links-left>dl>dd {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.links-left>dl>dd>a {
+  color: #757575;
+}
+
+.links-left>dl>dd>a:hover {
+  color: #ff6700;
+}
+
+/* 链接右边栏 */
+.links>.links-right {
+  float: right;
+  width: 251px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+}
+
+.links>.links-right p {
+  margin-bottom: 10px;
+}
+
+.links>.links-right a {
+  color: #424242;
+}
+
+.links>.links-right>.num {
+  font-size: 22px;
+  color: #ff6700;
+}
+
+.links>.links-right .tim {
+  font-size: 12px;
+}
+
+.links>.links-right .follow i {
+  font-size: 18px;
+}
+
+.links>.links-right .ser a {
+  display: inline-block;
+  width: 118px;
+  height: 28px;
+  font-size: 12px;
+  border: 1px solid #f25807;
+  line-height: 28px;
+  color: #ff6700;
+  transition: all .3s;
+}
+
+.links-right i {
+  margin-right: 3px;
+}
+
+.links>.links-right .ser a:hover {
+  background-color: #f25807;
+  color: #fff;
+}
+
+.links>.links-right .follow .fa:hover {
+  color: #ff6700;
+}
+
+.follow {
+  position: relative;
+}
+
+.links>.links-right .showMi {
+  width: 126px;
+  height: 126px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  display: none;
+  z-index: 99;
+}
+
+.links>.links-right .follow .fa-weixin:hover+img {
+  display: block;
+}
+
+/* 注册商标 */
+.site-brand {
+  position: relative;
+  padding: 30px 0;
+  font-size: 12px;
+  background-color: #fafafa;
+}
+
+.site-brand .logo {
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  margin-right: 20px;
+  background: url('../images/logo-mi2.png') no-repeat;
+  background-size: 100%;
+}
+
+.site-brand .brand-text {
+  margin-left: 80px;
+  color: #b0b0b0;
+}
+
+.site-brand .sites {
+  color: #757575;
+}
+
+.site-brand .brand-links {
+  margin-top: 5px;
+  margin-left: 80px;
+}
+
+.site-brand .brand-links img {
+  height: 28px;
+}
+
+.site-brand .slogan {
+  margin: 40px auto 0;
+  width: 100%;
+  height: 19px;
+  background: url('../images/slogan2020.png') no-repeat;
+  background-position-x: 50%;
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+/* 固定工具栏 */
+.tool-bar {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  z-index: 99;
+  display: none;
+}
+
+.tool-bar ul li {
+  position: relative;
+  width: 82px;
+  height: 90px;
+  border: 1px solid #f5f5f5;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tool-bar img {
+  position: absolute;
+  left: 27px;
+  top: 18px;
+  width: 30px;
+  height: 30px;
+}
+
+.tool-bar a {
+  color: #757575;
+}
+
+.tool-bar-list .Bhover {
+  display: none;
+}
+
+.tool-bar-list span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 56px;
+  text-align: center;
+}
+
+/* 返回顶部 */
+.tool-bar .toTop {
+  margin-top: 14px;
+  display: none;
+}
+
+.tool-bar-list .qrCode {
+  position: absolute;
+  left: -145px;
+  width: 130px;
+  height: 190px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  display: none;
+  transition: all .3s;
+  z-index: 9999;
+}
+
+.tool-bar-list .qrCode img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
+.tool-bar-list .qrCode span {
+  margin-top: 80px;
+  padding: 0 25px;
+  width: auto;
+  color: #757575;
+}
+
+.tool-bar .tool-bar-list:hover .title {
+  color: #ff6700;
+}
+
+.tool-bar .qrCodeFirst:hover .qrCode {
+  display: block;
+}
+
+/* 三角形 */
+.qrTriangle {
+  position: absolute;
+  top: 36px;
+  left: 131px;
+  border-left: solid 8px rgba(0, 0, 0, .05);
+  border-top: solid 8px transparent;
+  border-bottom: solid 8px transparent;
+
+}
+
+/* 固定窗口显示 */
+@media screen and (min-width:1040px) {
+  .tool-bar {
+    display: block;
+  }
+}

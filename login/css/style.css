@@ -1,0 +1,260 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+body a:hover {
+    color: #ff985e;
+}
+
+a {
+    color: #333333;
+}
+
+.left {
+    width: 25%;
+    height: 100%;
+    background: url(../images/banner.5b1efcd8.jpg) no-repeat;
+    background-size: cover;
+}
+
+.right {
+    flex: 1;
+    height: 100%;
+}
+
+.header {
+    height: 120px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header_Left {
+    width: 192px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+}
+
+.header_Left img {
+    width: 50px;
+    height: 50px;
+}
+
+.header_Left a {
+    color: #333333;
+}
+
+.header_Right {
+    width: 392px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 120px;
+}
+
+.header_Right a {
+    color: #a6a6a6;
+}
+
+.content {
+    width: 38%;
+    height: 75%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+    position: relative;
+}
+
+.content>.img,
+.code>.img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.content>span,
+.code>span {
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+    background: red;
+    position: absolute;
+    right: 82px;
+    top: 10px;
+    display: none;
+}
+
+.content .code {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+    /* top: 40px;
+    left: 35px; */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+.code>img {
+    width: 225px;
+    height: 225px;
+}
+
+.code .img {
+    width: 76px;
+    height: 80px;
+}
+
+.code>p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.code>li {
+    font-size: 14px;
+    color: #333333;
+}
+
+.box {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box h4 {
+    color: #aaaaaa;
+    font-size: 18px;
+}
+
+.height_light {
+    color: black;
+}
+
+.content ul {
+    position: relative;
+    left: 45px;
+    top: 35px;
+}
+
+.content ul a {
+    font-size: 30px;
+    margin-right: 27px;
+}
+
+.content ul .log_in {
+    color: black;
+}
+
+.tip,
+.pwd_tip {
+    color: red;
+    font-size: 10px;
+}
+
+.content ul .register {
+    color: #a6a6a6;
+}
+
+.content ul span {
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: orange;
+    position: relative;
+    left: 0;
+}
+
+.content form {
+    width: 345px;
+    height: 436px;
+    position: relative;
+    top: 60px;
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content form>input {
+    height: 50px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-indent: 15px;
+    border: none;
+    outline: none;
+}
+
+.right_light {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+.content form li {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: #b0b0b0;
+}
+
+.content form li input {
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 4px;
+
+}
+
+.treaty {
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+
+.content form>button {
+    height: 50px;
+    color: white;
+    background-color: #ff6900;
+    border: none;
+    outline: none;
+}
+
+.content form h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.content form h4 {
+    text-align: center;
+    color: #b5b5b5;
+    font-size: 14px;
+}

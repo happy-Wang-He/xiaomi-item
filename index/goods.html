@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3215787_vut0gruwuz9.css">
+</head>
+
+<body>
+    <!-- 头部导航 -->
+    <div class="header_nav">
+        <div class="nav_container">
+            <ul>
+                <li><a href="../登录页面/index.html" target="_blank">登录</a><a href="../注册页面/index.html"
+                        target="_blank">注册</a></li>
+                <li><a href="">帮助中心</a></li>
+                <li><a href="">下载APP</a></li>
+                <li><a href="">资质证照/协议规则</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部中间 -->
+    <div class="header_middle">
+        <div class="middle_con">
+            <h1><a href="../小米有品子页面/index.html" target=""><img src="images/logo@2x.30cd8c00.png" alt=""></a></h1>
+            <li><a href="">有品秒杀</a><a href="">企业采购</a></li>
+            <div class="box">
+                <i class="iconfont icon-sousuokuang1 i-log"></i><input type="text" placeholder="电视" class="sear">
+                <a href="../购物车/index.html"><img src="images/QQ截图20220423181044.png" alt=""
+                        style="cursor: pointer;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详情页 -->
+    <div class="details">
+        <div class="left-img">
+            <!-- <img src="./images/QQ截图20220505112639.png" alt="" class="img"> -->
+            <div class="mask"></div>
+
+        </div>
+        <div class="loupe"></div>
+        <div class="right-box">
+            <div id="hide" style="display: none;">123456</div>
+            <div class="name"></div>
+            <div class="box-main">
+                <!-- <li><span>售价</span><i class="main-money">￥4299</i></li> -->
+
+            </div>
+            <div class="box-footer">
+                <h6>配送地区 北京 北京市 海淀区 有货 修改</h6>
+                <li class="goodsNorms"></li>
+                <li><span>数量</span> &nbsp;&nbsp;<button class="minBtn">-</button>
+                    <input type="text" oninput="value=value.replace(/[^\d]/g,'')" value="1" class="num">
+                    <button class="addBtn">+</button>
+                </li>
+                <div class="code">
+                    <button class="add-cart">添加到购物车</button><button>收藏</button><button>客服</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 图片展示区 -->
+    <div class="main">
+        <!-- <img src="./images/ss.png" alt=""> -->
+    </div>
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="footer-con">
+            <img src="./images/logo@2x.30cd8c00.png" alt="">
+            <div class="footer-info">
+                <div class="info-left">
+                    <li>企业名称：有品信息科技有限公司 关于我们</li>
+                    <li>平台运营资质证照医疗 器械网络交易服务第三方平台备案凭证</li>
+                    <li>小米有品平台运营主体变更公告</li>
+                    <li>南京市建邺区白龙江东街8号3栋9层</li>
+                    <li>南京市建邺区白龙江东街8号3栋9层</li>
+                </div>
+                <div class="info-right" style="width: 100px;height: 36px;">
+                    <img src="./images/images/f-logo.76889756.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右边固定导航 -->
+    <div class="fixed-right">
+        <ul>
+            <li class="connect">
+                <a href="#!" class="con"></a>
+                <p>联系客户</p>
+                <div class="fixed-right-img"><img src="./images/qq.png" alt=""></div>
+            </li>
+            <li class="app">
+                <a href="#!" class="con"></a>
+                <p>下载APP</p>
+                <div class="fixed-right-img1"><img src="./images/qq1.png" alt=""></div>
+            </li>
+            <li class="newman">
+                <a href="#!" class="con"></a>
+                <p>新人有礼</p>
+                <div class="fixed-right-img2"><img src="./images/qq2.png" alt=""></div>
+            </li>
+            <li class="focus">
+                <a href="#!" class="con"></a>
+                <p>关注微信</p>
+                <div class="fixed-right-img3"><img src="./images/qq1.png" alt=""></div>
+            </li>
+            <li class="return-top">
+                <a href="#!" class="con"></a>
+                <p>回到顶部</p>
+            </li>
+            <li class="focus1">
+                <a href="#!" class="con"></a>
+                <p>添加点我</p>
+                <div class="fixed-right-img4">
+                    <img src="./images/qq1.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/jQuery v3.6.0.js"></script>
+    <script src="./layer/layer3.1.1/layer.js"></script>
+    <script src="./js/goods.js"></script>
+</body>
+
+</html>
