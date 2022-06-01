@@ -178,6 +178,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .swiper-slide,
@@ -202,8 +203,32 @@ body {
 
 .btn_right,
 .btn_left {
-    width: 50px;
+    top: 180px;
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 3%;
 }
+
+.btn_right {
+    left: 819px;
+    background: url(../../index/images/icon-slides.png) no-repeat -125px 50%;
+}
+
+.btn_right:hover {
+    background-position: -43px;
+}
+
+.btn_left {
+    background: url(../../index/images/icon-slides.png) no-repeat -84px 50%;
+}
+
+.btn_left:hover {
+    background-position: 0px;
+}
+
 
 .swiper-slide img {
     width: 100%;

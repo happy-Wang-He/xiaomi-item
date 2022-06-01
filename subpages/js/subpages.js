@@ -25,7 +25,7 @@ class Subpages {
     if (this.index < 0) {
       this.index = 5;
     }
-    console.log(this.index);
+    // console.log(this.index);
     this.imgPlay(this.nextIndex, this.index);
   }
   imgPlay(nextIndex, index) {
