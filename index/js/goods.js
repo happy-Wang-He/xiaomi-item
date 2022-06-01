@@ -61,10 +61,11 @@ class GoodsInfo {
             let goodsId = localStorage.getItem('goodsId')
             let id = localStorage.getItem('user_id')
             let data = `id=${id}&goodsId=${goodsId}`
+
             axios.post('http://localhost:8888/cart/add', data).then((res) => {
-                // console.log(res);
+                console.log(res);
                 if (res.status == 200 && res.data.code == 1) {
-                    // console.log(55665);
+                    console.log(55665);
                     layer.open({
                         title: '添加购物车成功^_^',
                         btn: ['继续浏览', '购物车结算'],
@@ -74,9 +75,12 @@ class GoodsInfo {
                     })
                 } else if (res.status == 200 && res.data.code == 401) {
                     location.href = '../login/login.html?ReturnUrl=../index/goods.html'
+                } else if (res.status == 200 && res.data.code == 0) {
+                    location.href = '../login/login.html?ReturnUrl=../index/goods.html'
                 }
             })
         } else {
+
             location.href = '../login/login.html?ReturnUrl=../index/goods.html'
         }
     }
